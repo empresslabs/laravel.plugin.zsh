@@ -8,26 +8,48 @@
   </a>
 </p>
 
-Plugin for skiping the `php` command when running artisan commands and `./sail` or `./vendor/bin/sail` when running sail commands.
+Plugin for skipping the `php` command when running artisan commands and `./sail` or `./vendor/bin/sail` when running sail commands.
+
+## Preview
+
+![](.github/assets/preview.gif)
 
 ## Installation
 
+### Using Oh-My-Zsh
+
 ```bash
-# Using oh-my-zsh
 git clone https://github.com/baliestri/laravel.plugin.zsh.git $ZSH_CUSTOM/plugins/laravel.plugin.zsh
-# Add laravel to the plugins array in your zshrc file.
+```
 
-# Using zinit
+```bash
+~/.zshrc
+
+plugins=(... laravel)
+```
+
+### Using Zinit
+
+```bash
 zinit light baliestri/laravel.plugin.zsh
+```
 
-# Using zi
+### Using Zi
+
+```bash
 zi light baliestri/laravel.plugin.zsh
+```
+
+### Using Zgenom
+
+```bash
+zgenom load baliestri/laravel.plugin.zsh
 ```
 
 ## Usage
 
 ```bash
-cd /path/to/laravel/project # laravel subdirectory
+cd /path/to/laravel/project # or laravel subdirectory
 artisan # instead of php artisan
 sail # instead of ./sail or ./vendor/bin/sail
 ```
