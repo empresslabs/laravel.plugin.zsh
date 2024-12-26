@@ -16,40 +16,49 @@ Plugin for skipping the `php` command when running artisan commands and `./sail`
 
 ## Installation
 
-### Using Oh-My-Zsh
+#### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
 
-```bash
-git clone https://github.com/baliestri/laravel.plugin.zsh.git $ZSH_CUSTOM/plugins/laravel.plugin.zsh
+```shell
+git clone https://github.com/empresslabs/laravel.plugin.zsh.git $ZSH_CUSTOM/plugins/laravel
 ```
 
-```bash
+```shell
 ~/.zshrc
-
 plugins=(... laravel)
 ```
 
-### Using Zinit
+#### [zinit](https://github.com/zdharma-continuum/zinit)
 
-```bash
-zinit light baliestri/laravel.plugin.zsh
+```shell
+zinit light empresslabs/laravel.plugin.zsh
 ```
 
-### Using Zi
+#### [zi](https://github.com/z-shell/zi)
 
-```bash
-zi light baliestri/laravel.plugin.zsh
+```shell
+zi light empresslabs/laravel.plugin.zsh
 ```
 
-### Using Zgenom
+#### [zgenom](https://github.com/jandamm/zgenom)
 
-```bash
-zgenom load baliestri/laravel.plugin.zsh
+```shell
+zgenom load empresslabs/laravel.plugin.zsh
+```
+
+#### [zplug](https://github.com/zplug/zplug)
+
+```shell
+zplug empresslabs/laravel.plugin.zsh
 ```
 
 ## Usage
 
 ```bash
-cd /path/to/laravel/project # or laravel subdirectory
+cd /path/to/laravel/project # or subdirectory
 artisan # instead of php artisan
 sail # instead of ./sail or ./vendor/bin/sail
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
